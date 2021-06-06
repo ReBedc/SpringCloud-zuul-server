@@ -25,7 +25,7 @@ import org.springframework.web.filter.CorsFilter;
 @EnableResourceServer
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
-	@Value("config.security.oauth.jwt.key")
+	@Value("${config.security.oauth.jwt.key}")
 	private String jwtKey;
 	
 	@Override
